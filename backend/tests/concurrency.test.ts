@@ -19,7 +19,7 @@ describe('Concurrency & Idempotency Tests', () => {
       .set('Authorization', `Bearer ${tokenWorker}`)
       .send({
         projectId: 'proj-shibuya',
-        workDate: '2026-09-14',
+        workDate: '2026-11-20',
         weather: '晴',
         workers: [{ name: '佐藤 健太', trade: '普通作業員', workHours: 8, overtimeHours: 0 }],
         workItems: [{ workType: '掘削', description: '基礎掘削', quantity: 10, unit: 'm³' }],

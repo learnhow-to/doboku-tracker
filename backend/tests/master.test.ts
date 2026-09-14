@@ -4,8 +4,8 @@ import { app } from '../src/app.js';
 import { seedDatabase } from '../src/db/seed.js';
 
 describe('Admin Master Data Management and Tenant Isolation', () => {
-  let tokenAdmin: string;      // Admin in Org 1 (Gureisu)
-  let tokenWorker: string;     // Worker in Org 1 (Gureisu)
+  let tokenAdmin: string;      // Admin in Org 1 (Tokyo-doboku)
+  let tokenWorker: string;     // Worker in Org 1 (Tokyo-doboku)
   let tokenOtherOrg: string;   // Worker in Org 2 (Satou-gumi)
   let createdWorkerId: string;
   let createdEquipId: string;

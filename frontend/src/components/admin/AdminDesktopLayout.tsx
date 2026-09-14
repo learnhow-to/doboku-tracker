@@ -66,10 +66,10 @@ export const AdminDesktopLayout: React.FC<AdminDesktopLayoutProps> = ({
         <div className="p-4 border-b border-slate-800">
           <div className="flex items-center space-x-3">
             <div className="bg-white p-1 rounded shadow-sm flex items-center justify-center">
-              <img src="/logo.png" alt="株式会社グレイス" className="h-7 w-auto object-contain" />
+              <img src="/logo.png" alt="DobokuTracker" className="h-7 w-auto object-contain" />
             </div>
             <div>
-              <h1 className="text-sm font-bold tracking-tight text-slate-100">株式会社グレイス</h1>
+              <h1 className="text-sm font-bold tracking-tight text-slate-100">東京土木建設株式会社</h1>
               <div className="flex items-center space-x-1.5 mt-0.5">
                 <span className="text-[10px] bg-teal-900/80 text-teal-300 px-1.5 py-0.5 rounded font-mono font-bold border border-teal-700/50">
                   本社管理システム

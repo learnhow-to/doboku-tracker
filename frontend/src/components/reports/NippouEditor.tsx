@@ -384,7 +384,7 @@ export const NippouEditor: React.FC<NippouEditorProps> = ({
             locationSta: photoLocation || '現場一円',
             stage: photoStage,
             date: workDate,
-            company: '株式会社グレイス',
+            company: '東京土木建設株式会社',
           });
         } catch (overlayErr) {
           console.error('Kokuban overlay failed, fallback to original:', overlayErr);

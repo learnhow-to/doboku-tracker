@@ -49,11 +49,11 @@ export const Header: React.FC<HeaderProps> = ({
       <div className="max-w-md mx-auto flex items-center justify-between">
         <div className="flex items-center space-x-2">
           <div className="bg-white px-1.5 py-0.5 rounded shadow-sm flex items-center justify-center">
-            <img src="/logo.png" alt="株式会社グレイス" className="h-6 w-auto object-contain" />
+            <img src="/logo.png" alt="DobokuTracker" className="h-6 w-auto object-contain" />
           </div>
           <div>
             <h1 className="text-xs sm:text-sm font-bold tracking-tight text-slate-100 flex items-center space-x-1.5">
-              <span>株式会社グレイス</span>
+              <span>東京土木建設</span>
               <span className="text-[10px] bg-slate-800 text-teal-400 px-1.5 py-0.5 rounded border border-slate-700 font-mono font-bold">
                 {lang === 'ja' ? '土木日報' : 'Nippou Sipil'}
               </span>

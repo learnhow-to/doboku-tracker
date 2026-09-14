@@ -105,7 +105,7 @@ export const HankoApprovalBlock: React.FC<HankoApprovalBlockProps> = ({
           <div className="h-14 flex items-center justify-center">
             {isApproved ? (
               <HankoStamp
-                name="グレイス"
+                name="東土"
                 date={approvedAt || workDate}
                 label="承認"
                 size={size}

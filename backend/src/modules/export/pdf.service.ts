@@ -257,8 +257,8 @@ export async function generateNippouHtml(reportId: string, user: AuthenticatedUs
 
   <div class="header-container">
     <div class="header-left">
-      ${getLogoBase64() ? `<img src="${getLogoBase64()}" alt="GUREISU" style="height: 28px; vertical-align: middle;" /><br/>` : ''}
-      <span style="font-size: 8.5pt; font-weight: bold; color: #111;">株式会社グレイス</span>
+      ${getLogoBase64() ? `<img src="${getLogoBase64()}" alt="Logo" style="height: 28px; vertical-align: middle;" /><br/>` : ''}
+      <span style="font-size: 8.5pt; font-weight: bold; color: #111;">東京土木建設株式会社</span>
     </div>
     <div class="header-center">
       <div class="draft-badge">${report.status === 'APPROVED' ? '原本・電子決裁済' : 'DRAFT — TEMPLATE BELUM TERVERIFIKASI (原本照合待ち)'}</div>
@@ -275,7 +275,7 @@ export async function generateNippouHtml(reportId: string, user: AuthenticatedUs
           <td>
             ${report.status === 'APPROVED' ? `
               <div class="hanko-seal">
-                <div class="hanko-seal-top">グレイス</div>
+                <div class="hanko-seal-top">東京土木</div>
                 <div class="hanko-seal-date">${approvedDateDisplay}</div>
                 <div class="hanko-seal-bottom">承認</div>
               </div>

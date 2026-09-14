@@ -110,8 +110,8 @@ export const AdminExportView: React.FC<AdminExportViewProps> = ({
           </h2>
           <p className="text-xs text-slate-500 mt-1">
             {lang === 'ja'
-              ? '株式会社グレイス公式帳票Excel（装飾・合計枠線付き）および基幹システム連携用CSVを出力します。'
-              : 'Ekspor laporan resmi PT Grace format Excel (.xlsx dengan styling) dan CSV untuk payroll/sistem akuntansi.'}
+              ? '公式帳票Excel（装飾・合計枠線付き）および基幹システム連携用CSVを出力します。'
+              : 'Ekspor laporan resmi format Excel (.xlsx dengan styling korporat) dan CSV untuk payroll/sistem akuntansi.'}
           </p>
         </div>
 
@@ -129,7 +129,7 @@ export const AdminExportView: React.FC<AdminExportViewProps> = ({
           <button
             onClick={handleDownloadExcel}
             className="btn-touch bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-bold px-4 py-2 rounded shadow flex items-center space-x-2 transition"
-            title={lang === 'ja' ? '株式会社グレイス公式帳票 (Meiryoフォント・装飾枠線・合計数式完備)' : 'Ekspor Excel Resmi'}
+            title={lang === 'ja' ? '公式帳票 (Meiryoフォント・装飾枠線・合計数式完備)' : 'Ekspor Excel Resmi'}
           >
             <FileSpreadsheet className="w-4 h-4 text-emerald-200" />
             <span>

@@ -3,7 +3,7 @@
 
 - **Author:** Fatur
 - **Background:** Civil Construction Worker in Japan & Software Builder
-- **Client & Domain Identity:** 株式会社グレイス (GUREISU) — Civil Engineering & Earthwork (土工・残土運搬), Tokyo, Japan
+- **Client & Domain Identity:** Confidential Japanese Enterprise Client — Civil Engineering & Earthwork (土工・残土運搬), Tokyo, Japan
 - **Project Repository:** [github.com/learnhow-to/doboku-tracker](https://github.com/learnhow-to/doboku-tracker)
 - **Tech Stack:** React 18, TypeScript 5.7, Node.js, Express, PostgreSQL, IndexedDB (`idb`), HTML5 Canvas, ExcelJS, Tailwind CSS, Vitest, Docker
 
@@ -13,7 +13,7 @@
 
 Japan’s civil construction industry is facing an acute labor shortage compounded by the strict overtime caps introduced under the **"2024 Problem" (2024年問題)**. Despite these pressures, day-to-day operations on active job sites (*genba*) remain heavily reliant on physical carbon-copy paper daily reports (*作業日報*). Foremen spend 15–30 minutes handwriting crew lists, machinery hours, and fuel consumption in dusty or rainy conditions, while back-office staff spend 2–3 days at the end of each month manually transcribing handwritten slips into Excel for payroll and billing. Furthermore, strict inspection standards set by the **Ministry of Land, Infrastructure, Transport and Tourism (MLIT / 国土交通省)** require physical chalkboards (*Kokuban*) in every job-site photo.
 
-**DobokuTracker** was engineered as an industrial-grade, *dual-interface* (Mobile PWA + Desktop Backoffice) B2B SaaS platform for **株式会社グレイス (GUREISU)**. Built with an **offline-first architecture** (IndexedDB local caching + Optimistic Concurrency Control), it enables field foremen to log daily reports in subterranean excavations with zero cellular connectivity, automatically replicates recurring data (*前日コピー*), generates MLIT-compliant digital chalkboards directly on photos via HTML5 Canvas, and provides a 3-tier digital Hanko (*電子印鑑*) approval workflow. Daily reporting turnaround drops from **3 minutes to under 30 seconds**, backed by **31/31 passing automated tests (100%)**.
+**DobokuTracker** was engineered as an industrial-grade, *dual-interface* (Mobile PWA + Desktop Backoffice) B2B SaaS platform for an enterprise civil engineering contractor in Tokyo (Confidential Client). Built with an **offline-first architecture** (IndexedDB local caching + Optimistic Concurrency Control), it enables field foremen to log daily reports in subterranean excavations with zero cellular connectivity, automatically replicates recurring data (*前日コピー*), generates MLIT-compliant digital chalkboards directly on photos via HTML5 Canvas, and provides a 3-tier digital Hanko (*電子印鑑*) approval workflow. Daily reporting turnaround drops from **3 minutes to under 30 seconds**, backed by **31/31 passing automated tests (100%)**.
 
 ---
 
@@ -55,7 +55,7 @@ The goal was to design and build an industrial B2B SaaS platform specifically en
 #### B. HTML5 Canvas MLIT Digital Kokuban (電子黒板) Engine
 To eliminate heavy physical wooden blackboards from muddy trenches:
 - Engineered a client-side HTML5 Canvas overlay engine that dynamically draws a Japanese pine-framed green blackboard directly onto field inspection photos before file compression.
-- Automatically burns verified project metadata: Project Name (*工事件名*), Trade (*工種*), Station (*測点 STA*), Work Description (*施工状況*), and Contractor Name (**株式会社グレイス**).
+- Automatically burns verified project metadata: Project Name (*工事件名*), Trade (*工種*), Station (*測点 STA*), Work Description (*施工状況*), and Contractor Name / Company Seal (*施工会社*).
 - Embeds high-contrast chalk-white typography (`#F8FAFC`) with subtle shadow relief, fulfilling MLIT construction photo management criteria without external photo-editing tools.
 
 #### C. 3-Tier Digital Hanko (電子印鑑) & Separation of Duties
@@ -108,6 +108,6 @@ Test Files  5 passed (5)
 ## Current Status & Limitations
 
 - **Current Status:** Enterprise Release (v1.5), production-ready and fully tested.
-- **Client Identity:** Designed specifically for the field workflow of **株式会社グレイス (GUREISU)**.
+- **Client Identity:** Confidential Japanese civil engineering enterprise specializing in public & commercial earthworks (土工・残土運搬).
 - **Photo Storage:** In local development mode, photos are stored in local disk volume (`uploads/`); production deployments integrate S3-compatible cloud storage (AWS S3 or Supabase Storage).
 - **Template Verifications:** Verified core fields matching actual office sheets (作業日, 天候, 現場名, 元請名, 現場作業員, 作業時間, 使用機材, 伝達事項). Margin notes and unverified edge sections carry the strict disclaimer watermark: `DRAFT — TEMPLATE BELUM TERVERIFIKASI`.

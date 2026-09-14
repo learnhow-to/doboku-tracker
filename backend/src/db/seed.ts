@@ -9,7 +9,7 @@ export async function seedDatabase() {
   await query(`
     INSERT INTO organizations (id, name, code)
     VALUES 
-      ('org-yamada', '株式会社グレイス', 'gureisu'),
+      ('org-yamada', '東京土木建設株式会社', 'tokyo-doboku'),
       ('org-satou', '佐藤組株式会社', 'satou-gumi')
     ON CONFLICT (id) DO UPDATE SET name = EXCLUDED.name, code = EXCLUDED.code;
   `);
@@ -18,11 +18,11 @@ export async function seedDatabase() {
   await query(`
     INSERT INTO users (id, auth_id, email, display_name)
     VALUES 
-      ('usr-admin', 'auth-admin', 'admin@gureisu.co.jp', '田中 宏 (管理者)'),
-      ('usr-foreman', 'auth-foreman', 'foreman@gureisu.co.jp', '鈴木 一郎 (現場主任/監督)'),
-      ('usr-worker-1', 'auth-worker-1', 'sato@gureisu.co.jp', '佐藤 健太 (作業員)'),
-      ('usr-worker-2', 'auth-worker-2', 'takahashi@gureisu.co.jp', '高橋 雄二 (作業員)'),
-      ('usr-office', 'auth-office', 'office@gureisu.co.jp', '渡辺 美咲 (事務/承認者)'),
+      ('usr-admin', 'auth-admin', 'admin@tokyodoboku.co.jp', '田中 宏 (管理者)'),
+      ('usr-foreman', 'auth-foreman', 'foreman@tokyodoboku.co.jp', '鈴木 一郎 (現場主任/監督)'),
+      ('usr-worker-1', 'auth-worker-1', 'sato@tokyodoboku.co.jp', '佐藤 健太 (作業員)'),
+      ('usr-worker-2', 'auth-worker-2', 'takahashi@tokyodoboku.co.jp', '高橋 雄二 (作業員)'),
+      ('usr-office', 'auth-office', 'office@tokyodoboku.co.jp', '渡辺 美咲 (事務/承認者)'),
       ('usr-other-org', 'auth-other-org', 'ito@satou-gumi.jp', '伊藤 達也 (他社作業員)')
     ON CONFLICT (id) DO UPDATE SET email = EXCLUDED.email;
   `);

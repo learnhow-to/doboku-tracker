@@ -289,7 +289,7 @@ export function generateWorkforceCsv(rows: any[], meta: ExportMeta = {}): string
   ];
 
   return formatCsvDocument(
-    '株式会社グレイス (GUREISU) — 現場労務・出役人工集計実績台帳',
+    '東京土木建設株式会社 — 現場労務・出役人工集計実績台帳',
     meta,
     headers,
     data,
@@ -417,7 +417,7 @@ export function generateEquipmentCsv(rows: any[], meta: ExportMeta = {}): string
   ];
 
   return formatCsvDocument(
-    '株式会社グレイス (GUREISU) — 重機稼働・給油軽油集計実績台帳',
+    '東京土木建設株式会社 — 重機稼働・給油軽油集計実績台帳',
     meta,
     headers,
     data,
@@ -532,7 +532,7 @@ export function generateWorkItemsCsv(rows: any[], meta: ExportMeta = {}): string
   ];
 
   return formatCsvDocument(
-    '株式会社グレイス (GUREISU) — 工種別出来高施工記録集計台帳',
+    '東京土木建設株式会社 — 工種別出来高施工記録集計台帳',
     meta,
     headers,
     data,

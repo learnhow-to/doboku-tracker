@@ -95,7 +95,7 @@ function autoFitColumns(sheet: ExcelJS.Worksheet) {
 
 export async function generateWorkforceExcel(rows: any[], meta: ExportMeta): Promise<Buffer> {
   const workbook = new ExcelJS.Workbook();
-  workbook.creator = '株式会社グレイス';
+  workbook.creator = '東京土木建設株式会社';
   workbook.created = new Date();
 
   const sheet = workbook.addWorksheet('労務・人工集計台帳', {
@@ -105,7 +105,7 @@ export async function generateWorkforceExcel(rows: any[], meta: ExportMeta): Pro
   // Title Row
   sheet.mergeCells('A1:K1');
   const titleCell = sheet.getCell('A1');
-  titleCell.value = '株式会社グレイス (GUREISU) — 現場労務・人工集計台帳';
+  titleCell.value = '東京土木建設株式会社 — 現場労務・人工集計台帳';
   titleCell.font = { name: 'Meiryo', size: 15, bold: true, color: { argb: 'FF0F172A' } };
   titleCell.alignment = { vertical: 'middle' };
   sheet.getRow(1).height = 30;
@@ -212,7 +212,7 @@ export async function generateWorkforceExcel(rows: any[], meta: ExportMeta): Pro
 
 export async function generateEquipmentExcel(rows: any[], meta: ExportMeta): Promise<Buffer> {
   const workbook = new ExcelJS.Workbook();
-  workbook.creator = '株式会社グレイス';
+  workbook.creator = '東京土木建設株式会社';
   workbook.created = new Date();
 
   const sheet = workbook.addWorksheet('重機・燃料集計台帳', {
@@ -222,7 +222,7 @@ export async function generateEquipmentExcel(rows: any[], meta: ExportMeta): Pro
   // Title Row
   sheet.mergeCells('A1:J1');
   const titleCell = sheet.getCell('A1');
-  titleCell.value = '株式会社グレイス (GUREISU) — 重機稼働・給油軽油集計台帳';
+  titleCell.value = '東京土木建設株式会社 — 重機稼働・給油軽油集計台帳';
   titleCell.font = { name: 'Meiryo', size: 15, bold: true, color: { argb: 'FF0F172A' } };
   titleCell.alignment = { vertical: 'middle' };
   sheet.getRow(1).height = 30;
@@ -318,7 +318,7 @@ export async function generateEquipmentExcel(rows: any[], meta: ExportMeta): Pro
 
 export async function generateWorkItemsExcel(rows: any[], meta: ExportMeta): Promise<Buffer> {
   const workbook = new ExcelJS.Workbook();
-  workbook.creator = '株式会社グレイス';
+  workbook.creator = '東京土木建設株式会社';
   workbook.created = new Date();
 
   const sheet = workbook.addWorksheet('出来高集計台帳', {
@@ -327,7 +327,7 @@ export async function generateWorkItemsExcel(rows: any[], meta: ExportMeta): Pro
 
   sheet.mergeCells('A1:H1');
   const titleCell = sheet.getCell('A1');
-  titleCell.value = '株式会社グレイス (GUREISU) — 工種別出来高施工記録集計台帳';
+  titleCell.value = '東京土木建設株式会社 — 工種別出来高施工記録集計台帳';
   titleCell.font = { name: 'Meiryo', size: 15, bold: true, color: { argb: 'FF0F172A' } };
   titleCell.alignment = { vertical: 'middle' };
   sheet.getRow(1).height = 30;

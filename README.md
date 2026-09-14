@@ -2,7 +2,7 @@
 ## Enterprise Field Operations & Civil Engineering Resource Governance SaaS
 
 ![Target Market](https://img.shields.io/badge/Market-Japan%20B2B%20SaaS-DC2626?style=for-the-badge&logo=japan)
-![Enterprise Client](https://img.shields.io/badge/Client-%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%B0%E3%83%AC%E3%82%A4%E3%82%B9%20(GUREISU)-0F766E?style=for-the-badge)
+![Enterprise Client](https://img.shields.io/badge/Client-Confidential%20Contractor%20(Tokyo)-0F766E?style=for-the-badge)
 ![Tech Stack](https://img.shields.io/badge/Stack-React%2018%20%7C%20Node.js%20%7C%20PostgreSQL-3B82F6?style=for-the-badge)
 ![Offline Architecture](https://img.shields.io/badge/Offline--First-IndexedDB%20%2B%20Sync%20Queue-10B981?style=for-the-badge)
 ![Test Coverage](https://img.shields.io/badge/Tests-31%2F31%20Passed%20(100%25)-8B5CF6?style=for-the-badge)
@@ -19,7 +19,7 @@
 | :--- | :--- | :--- | :--- |
 | 📋 **前日コピー機能**<br>*(Salin Laporan Kemarin)* | Mengeliminasi pengulangan input data harian yang 90% identik. | Algoritma *deep replication* mereplikasi daftar pekerja, armada alat, dan jenis pekerjaan dengan ID lokal bersih dan reset jam kerja standar. | Memangkas waktu input mandor di lapangan dari **3 menit menjadi 30 detik** per hari. |
 | 🔴 **電子印鑑 / 3-Kotak ハンコ**<br>*(Digital Hanko Approval)* | Hierarki legalitas stempel merah berjenjang Jepang. | Komponen visual stempel merah vermilion (`#DC2626`) dengan kanji marga, tanggal inspeksi, rotasi dinamis, dan 3 kotak hierarki: **【担当・職長】**, **【現場代理人】**, **【所長・確認】**. | Memenuhi keabsahan hukum dan budaya persetujuan resmi kontraktor utama (*moto-uke*). |
-| 🟩 **電子黒板 (Digital Kokuban)**<br>*(Papan Tulis Proyek Otomatis)* | Spesifikasi foto inspeksi konstruksi digital MLIT (*国土交通省*). | Engine Canvas HTML5 client-side menyematkan papan hijau berbingkai kayu langsung ke foto lapangan: 工事件名, 工種, 測点(STA), 施工状況, 施工会社 (**株式会社グレイス**). | Menghilangkan beban membawa papan tulis kayu & tripod fisik ke area galian berlumpur. |
+| 🟩 **電子黒板 (Digital Kokuban)**<br>*(Papan Tulis Proyek Otomatis)* | Spesifikasi foto inspeksi konstruksi digital MLIT (*国土交通省*). | Engine Canvas HTML5 client-side menyematkan papan hijau berbingkai kayu langsung ke foto lapangan: 工事件名, 工種, 測点(STA), 施工状況, 施工会社印. | Menghilangkan beban membawa papan tulis kayu & tripod fisik ke area galian berlumpur. |
 | 📅 **月次カレンダー表示**<br>*(Monthly Compliance Matrix)* | Audit kepatuhan 31 hari dalam 1 layar manajerial. | Grid matriks 31 hari interaktif di PC Backoffice dengan filter proyek dan indikator KPI kepatuhan (*Teishutsu-ritsu / 提出率*). | Mencegah keterlambatan penagihan termin akibat laporan bolong di akhir bulan. |
 | ⚡ **一括承認機能**<br>*(Batch Multi-Select Approval)* | Efisiensi verifikasi akhir bulan oleh Site Manager. | Transaksi database atomik multi-laporan dengan penegakan otomatis *Separation of Duties* (laporan buatan sendiri otomatis diskip). | Menyetujui 30+ laporan bulanan dalam **1 kali klik**. |
 | 📗 **Excel Resmi & CSV BOM**<br>*(Corporate Export Engine)* | Standar format laporan korporat & ERP payroll. | Pembuatan berkas Excel murni (.xlsx via `ExcelJS`) bertema warna teal, garis bawah ganda akuntansi Jepang, formula total otomatis, dan CSV UTF-8 BOM bebas *mojibake*. | Menghemat 2–3 hari kerja staf kantor di setiap akhir bulan penutupan buku. |
@@ -149,5 +149,5 @@ docker compose up --build
 ---
 
 ## 📄 Lisensi & Hak Cipta
-Dirancang dan dikembangkan sebagai solusi perangkat lunak enterprise B2B SaaS untuk **株式会社グレイス (GUREISU)**. Hak cipta dilindungi undang-undang.
+Dirancang dan dikembangkan sebagai solusi perangkat lunak enterprise B2B SaaS untuk kontraktor teknik sipil & pekerjaan tanah di Tokyo (Confidential Client). Hak cipta dilindungi undang-undang.
 

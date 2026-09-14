@@ -161,7 +161,7 @@ describe('Tahap B: Vertical Slice Nippou Workflow (Draft -> Submit -> Return -> 
     expect(res.text).toContain('2TDT');
     // Verify Hanko stamp seal is rendered
     expect(res.text).toContain('hanko-seal');
-    expect(res.text).toContain('グレイス');
+    expect(res.text).toContain('東京土木');
   });
 
   it('Step 9: Get latest previous report for "Copy from yesterday" feature', async () => {
